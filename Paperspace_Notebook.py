@@ -401,8 +401,7 @@ custom_metrics = MultiLabel_Acc((val_img, val_labels))
 model_obj = model.fit(training_img, training_labels, 
                       epochs = 250, initial_epoch = 0, 
                       validation_data = (val_img, val_labels), 
-                      batch_size = 128, verbose = 1, 
-                      callbacks = [custom_metrics])
+                      batch_size = 128, verbose = 1)#, callbacks = [custom_metrics])
 
 Predictions = model.predict(test_img)
 
