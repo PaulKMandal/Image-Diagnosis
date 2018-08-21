@@ -267,7 +267,7 @@ img_channels = 1
 # network params
 #
 
-cardinality = 16
+cardinality = 8
 
 
 def residual_network(x):
